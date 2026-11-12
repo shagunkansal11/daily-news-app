@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📰 Daily News</h1>
+        <p>Your daily dose of information</p>
+    </header>
+
+    <nav>
+        <button onclick="loadNews('general')">Home</button>
+        <button onclick="loadNews('india')">India</button>
+        <button onclick="loadNews('world')">World</button>
+        <button onclick="loadNews('technology')">Technology</button>
+        <button onclick="loadNews('business')">Business</button>
+    </nav>
+
+    <section class="search-box">
+        <input type="text" id="searchInput"
+            placeholder="Search news...">
+        <button onclick="searchNews()">Search</button>
+    </section>
+
+    <h2 id="heading">Latest Headlines</h2>
+
+    <main id="newsContainer">
+        <p>Loading news...</p>
+    </main>
+
+    <footer>
+        <p>© 2026 Daily News | Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
